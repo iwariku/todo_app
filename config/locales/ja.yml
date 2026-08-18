@@ -16,6 +16,11 @@ ja:
       sub_task:
         title: タイトル
         description: 説明
+      user:
+        name: 名前
+        email: メールアドレス
+        password: パスワード
+        password_confirmation: パスワード確認
   date:
     abbr_day_names:
       - 日

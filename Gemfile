@@ -23,6 +23,8 @@ gem 'html2haml'
 
 gem 'simple_form'
 
+gem "devise"
+
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "bundler-audit", require: false
@@ -32,4 +34,5 @@ end
 
 group :development do
   gem "web-console"
+  gem 'letter_opener_web'
 end
