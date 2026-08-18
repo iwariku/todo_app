@@ -21,6 +21,8 @@ gem "image_processing", "~> 1.2"
 gem "haml-rails"
 gem 'html2haml'
 
+gem 'simple_form'
+
 group :development, :test do
   gem "debug", platforms: %i[ mri windows ], require: "debug/prelude"
   gem "bundler-audit", require: false
