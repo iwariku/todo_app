@@ -11,3 +11,11 @@
   %tr
     %th 説明
     %td= @task.description
+
+%h2 サブタスク
+
+= link_to "サブタスク登録", new_task_sub_task_path(@task), class: "btn btn-primary mb-3"
+
+.list-group
+  - @task.sub_tasks.each do |sub_task|
+    = link_to sub_task.title, task_sub_task_path(@task, sub_task), class: "list-group-item list-group-item-action"
